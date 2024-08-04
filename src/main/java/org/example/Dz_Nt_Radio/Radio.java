@@ -10,13 +10,8 @@ public class Radio {
     private int minVolume = 0;
 
 
-    public Radio(int maxChanel, int minChanel, int currentChanel, int currentVolume, int maxVolume, int minVolume) {
+    public Radio(int maxChanel) {
         this.maxChanel = maxChanel;
-        this.minChanel = minChanel;
-        this.currentChanel = currentChanel;
-        this.currentVolume = currentVolume;
-        this.maxVolume = maxVolume;
-        this.minVolume = minVolume;
     }
 
 
@@ -25,23 +20,6 @@ public class Radio {
 
     public int getNumberOfChanel(){
         return currentChanel;
-    }
-
-
-    public int getMaxChanel() {
-        return maxChanel;
-    }
-
-    public void setMaxChanel(int maxChanel) {
-        currentChanel = maxChanel;
-    }
-
-    public int getMinChanel() {
-        return minChanel;
-    }
-
-    public void setMinChanel(int minChanel) {
-        currentChanel = minChanel;
     }
 
     public int getCurrentChanel() {
@@ -72,21 +50,6 @@ public class Radio {
         this.currentVolume = currentVolume;
     }
 
-    public int getMaxVolume() {
-        return maxVolume;
-    }
-
-    public void setMaxVolume() {
-        currentVolume = maxVolume;
-    }
-
-    public int getMinVolume() {
-        return minVolume;
-    }
-
-    public void setMinVolume() {
-        currentVolume = minVolume;
-    }
 
     public void nextChanel() {
         if (currentChanel >= 9) {
